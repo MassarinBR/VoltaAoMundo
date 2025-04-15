@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Suíça - Um País Fascinante</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    body .navbar {
+      background-color: #d52b1e;
+    }
+
+    .navbar-brand img {
+      width: 50px;
+    }
+
+    .nav-link {
+      color: white !important;
+    }
+
+    .nav-link:hover {
+      background-color: #a71d15;
+      border-radius: 5px;
+    }
+
+    main {
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('/imagens/alpes.jpg');
+      background-size: cover;
+      background-position: center;
+      z-index: -2;
+      /* abaixo da camada vermelha */
+    }
+
+    .container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(213, 43, 30, 0.5);
+      /* vermelho com 50% de opacidade */
+      z-index: -1;
+      /* acima da imagem, abaixo do conteúdo */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#"><img
+          src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg" alt="Bandeira da Suíça"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active"><a class="nav-link mx-3" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link mx-3" href="curiosidades.html">Curiosidades</a></li>
+          <li class="nav-item"><a class="nav-link mx-3" href="historia.html">História</a></li>
+          <li class="nav-item"><a class="nav-link mx-3" href="Infraestrutura.html">Infraestrutura</a></li>
+          <li class="nav-item"><a class="nav-link mx-3" href="cultura.html">Cultura</a></li>
+          <li class="nav-item"><a class="nav-link mx-3" href="futebol.html">Futebol</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="text-center text-white mt-3" hidden>Conheça a Suíça</h1>
+    <main>
+      Venha conhecer mais sobre esse país maravilhoso para se viver!!
+    </main>
+    <br><br><br>
+    <footer class="text-center p-3 mt-5 bg-danger text-white">
+      &copy; 2025 Conheça a Suíça. Desenvolvido por Pedro Massari. A beleza ta na simplicidade!
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
